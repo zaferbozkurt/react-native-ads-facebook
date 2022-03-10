@@ -1,15 +1,12 @@
-require 'json'
-package = JSON.parse(File.read(File.join(__dir__, './', 'package.json')))
-
 Pod::Spec.new do |s|
   s.name          = 'ReactNativeAdsFacebook'
-  s.version       = package['version']
-  s.summary       = package['description']
+  s.version       = '1.0.0'
+  s.summary       = 'Native Facebook Ads for React Native'
   # s.requires_arc  = true
-  s.author        = { 'abhaynpai' => 'abhaypai2611@gmail.com' }
-  s.license       = package['license']
-  s.homepage      = package['homepage']
-  s.source        = { :git => 'https://github.com/callstack/react-native-fbads', :tag => "v#{package['version']}" }
+  s.author        = { 'zaferbozkurt' => 'bozkurt.zafer@outlook.com' }
+  s.license       = 'MIT'
+  s.homepage      = 'https://github.com/zaferbozkurt/react-native-ads-facebook'
+  s.source        = { :git => 'https://github.com/zaferbozkurt/react-native-ads-facebook', :tag => "v#{package['version']}" }
   s.platform      = :ios, '7.0'
   s.dependency      'React'
 
