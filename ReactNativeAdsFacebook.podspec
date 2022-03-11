@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.dependency      'React'
   s.dependency      'FBAudienceNetwork'
+  s.dependency      'FBSDKCoreKit'
 
   s.source_files  = 'ios/**/*.{h,m}'
 end
